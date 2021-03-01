@@ -69,10 +69,10 @@ cd ../..
 
 ### Install snort3 registered ruleset
 mkdir snortrules-3000 && cd snortrules-3000 && \
-tar xvzf /root/snort/snort3-rules-3000.tar.gz && \
+tar xvzf ../snort3-rules-3000.tar.gz && \
 mv /usr/local/etc /usr/local/etc.orig && \
 mkdir /usr/local/etc && \
 cp -r * /usr/local/etc && \
 cd ..
 
-echo "export PATH=\"/usr/local/snort/bin:$PATH\"" >> /root/.bashrc
+echo "export PATH=\"/usr/local/snort/bin:$PATH\"" >> $HOME/.bashrc
